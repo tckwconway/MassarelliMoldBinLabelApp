@@ -31,7 +31,7 @@ Public Class fBinLabel
 
     Private Sub fBinLabel_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
         Dim rpt As New CrystalDecisions.CrystalReports.Engine.ReportDocument
-        
+
         Dim rptName As String = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().CodeBase) & "\MoldBinLabel.rpt"
         rptName = New Uri(rptName).LocalPath
 
@@ -40,7 +40,7 @@ Public Class fBinLabel
         With rpt
             .SetDataSource(dsBinLabel.Tables("Table1"))
             .PrintOptions.PrinterName = sPrinterName
-            .ReadRecords()
+            '.ReadRecords()
         End With
 
         If sPrintHandle = PrintOrPreview.Print.ToString Then

@@ -14,5 +14,8 @@
     <Setting Name="DataConnection" Type="System.String" Scope="User">
       <Value Profile="(Default)">Data Source=MASS_SQL2;Initial Catalog=DATA;Persist Security Info=True;User ID=SA</Value>
     </Setting>
+    <Setting Name="DefaultServer" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">mass-sql1</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

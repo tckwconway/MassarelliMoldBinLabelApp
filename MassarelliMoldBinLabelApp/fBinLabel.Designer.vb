@@ -38,7 +38,7 @@ Partial Class fBinLabel
         '
         Me.crvBinLabel.ActiveViewIndex = -1
         Me.crvBinLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.crvBinLabel.CachedPageNumberPerDoc = 10
+        'Me.crvBinLabel.CachedPageNumberPerDoc = 10
         Me.crvBinLabel.Cursor = System.Windows.Forms.Cursors.Default
         Me.crvBinLabel.Dock = System.Windows.Forms.DockStyle.Fill
         Me.crvBinLabel.Location = New System.Drawing.Point(0, 0)

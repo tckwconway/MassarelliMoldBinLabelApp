@@ -516,7 +516,7 @@ Public Class fMoldLabelApp
 
                 Dim dt As DataTable = BusObj.GetBins(cn, .MoldItemNo, .Location)
                 If dt.Rows.Count = 0 Then
-                    MsgBox("There is no Bin at Warehouse 002 for Item " & .MoldItemNo & "." & vbCrLf & vbCrLf & _
+                    MsgBox("There is no Bin at Warehouse 002 for Item " & .MoldItemNo & "." & vbCrLf & vbCrLf &
                            .MoldItemNo & " may be stored at Factory, 001.", MsgBoxStyle.OkOnly, "No Bin at 002 Warehouse")
                     tbMold.Clear()
                     tbMold.Text = ""
@@ -697,6 +697,10 @@ Public Class fMoldLabelApp
     Private Sub Timer4_Tick(sender As Object, e As System.EventArgs) Handles Timer4.Tick
         Timer4.Enabled = False
         lblSaved.Visible = False
+
+    End Sub
+
+    Private Sub tbMold_LostFocus(sender As Object, e As EventArgs) Handles tbMold.LostFocus
 
     End Sub
 
